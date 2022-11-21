@@ -2,6 +2,17 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
+
+    public static int largest(int a,int b,int c)
+    {
+        if(a>=b && a>=c)
+            return a;
+        else if (b>=a && b>=c)
+            return b;
+        else
+            return c;
+    }
+
     public static void main(String[] args) {
 
         System.out.println("1:Largest of 3 numbers");
