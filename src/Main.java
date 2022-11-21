@@ -80,18 +80,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("1:Largest of 3 numbers");
-        System.out.println("2:Smallest of 3 numbers");
-        System.out.println("3:Check prime no");
-        System.out.println("4:Check even or not");
-        System.out.println("5:Reverse of number");
-        System.out.println("6:Exit");
 
 
 
         int exit=0;
         while(exit!=1)
         {
+
+            System.out.println("1:Largest of 3 numbers");
+            System.out.println("2:Smallest of 3 numbers");
+            System.out.println("3:Check prime no");
+            System.out.println("4:Check even or not");
+            System.out.println("5:Reverse of number");
+            System.out.println("6:Exit");
+
 
             System.out.println("Enter a choice:");
 
@@ -101,14 +103,22 @@ public class Main {
             switch(choice) {
                 case 1:
                     System.out.println("Enter 3 int values:");
+                    int a=sc.nextInt();
+                    int b=sc.nextInt();
+                    int c=sc.nextInt();
+
                     int large = largest(a, b, c);
                     System.out.println("Largest no:" + large);
                     break;
 
                 case 2:
                     System.out.println("Enter 3 int values:");
+                    a=sc.nextInt();
+                    b=sc.nextInt();
+                    c=sc.nextInt();
+
                     int small = smallest(a, b, c);
-                    System.out.println("Largest no:" + large);
+                    System.out.println("Largest no:" + small);
                     break;
 
                 case 3:
