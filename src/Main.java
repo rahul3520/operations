@@ -28,19 +28,41 @@ public class Main {
         int i,m=0,flag=0;
         m=n/2;
         if(n==0||n==1){
-            return false;
+            flag=0;
         }else{
             for(i=2;i<=m;i++){
                 if(n%i==0){
                     System.out.println(n+" is not prime number");
-                    return false;
+                    flag=0;
                     break;
                 }
             }
-            if(flag==0)  { return true; }
+            if(flag==0)  { flag=1; }
         }
 
+        if(flag==1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
+
+    public static boolean Even(int num)
+    {
+        if(num%2==0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
 
     public static void main(String[] args) {
 
@@ -89,8 +111,8 @@ public class Main {
                 case 4:
                     System.out.println("Enter a no to check if its even:");
                     int num1 = sc.nextInt();
-                    bool1 = Even(num);
-                    if (bool == true) {
+                    boolean bool1 = Even(num1);
+                    if (bool1 == true) {
                         System.out.println("Even no");
                     } else {
                         System.out.println("odd no");
